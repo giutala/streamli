@@ -6,7 +6,7 @@ def generate_hearts(num_hearts):
     return [random.choice(hearts) for _ in range(num_hearts)]
 
 def main():
-    st.title("Open when needed. With love, giugiu.")
+    st.title(f"Open when needed. \n With love, giugiu.")
 
     if st.toggle("Activate sad marek"):
         num_hearts = st.slider("How sad are you?", min_value=1, max_value=100, value=5)
